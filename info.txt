@@ -40,6 +40,11 @@ $ajax
             dataType: "json",
     to wsystko bierzemy z api.jquery.com/ajax (manual taki jest)
 
+SLS plik jak odpalimy to bedzie dzialac
+
+
+2. Wdrazanie responsywnych stron internetowych. rwd
+zbadaj-> computed (pokazuje marginesy,rozmiar fontow itd),
 
 
 
