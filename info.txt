@@ -1,0 +1,9 @@
+12 i 13 temat. sending and receiving data by using the xmlhttpRequest Object
+
+Ajax - bez odswiezania mozna np przeciagnac pliki
+AJAX - Asynchronus (bez odswiezania strony) Javascript and XML (p par d div itd, standard tworzenia dokumentu)
+Teraz zamiast XML uzywamy JSON (jest krotszy)
+
+Zrobimy sql server + back end + (ajax) + front end www
+
+1.sql server (najpierw sql serv configuration manager potem sql serv management studio)
