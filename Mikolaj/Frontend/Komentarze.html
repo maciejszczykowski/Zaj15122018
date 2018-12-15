@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+   
+    <script src="Scripts/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            setInterval(function () {
+
+                $.ajax({
+                    url: "http://localhost:53277/api/komentarze",
+                    method: "GET",
+                    timeout: 1000,
+                    dataType: "json",
+                    contentType: "application/json"
+                }).done(function (comments) {        //komentarze z serwera
+                    // console.log(JSON.stringify(comments));
+                    // [{"Id":1,"Komentarz":"Dobry produkt"},{"Id":2,"Komentarz":"Fajny na prezent"},{"Id":3,"Komentarz":"Drogie"},{"Id":4,"Komentarz":"Super"}]
+                    $("#comments").html(""); //czyscimy html aby nie naspisywal nam tego co juz mamy tylko dodawal od nowa wszyztkie komentarze
+                    $.each(comments, function (index, comment) {
+                        $("#comments").append("<li>" + comment.Komentarz + "</li>"); //wez element z comments potem append czyli dodaj na koncu "komentarz". (super itd)
+
+                    });
+
+                }).fail(function (xhr, status, message) {
+                    alert(message);
+                });
+            }, 5000);  //po 5 sekundach rob te funkcje czyli wyczysc html i zaciagaj komentarze z servera
+        });
+    </script>
+</head>
+<body>
+
+    <h2>Program auto-nauczanie JS</h2>
+    <ul id="comments">
+
+
+    </ul>
+
+</body>
+</html>
