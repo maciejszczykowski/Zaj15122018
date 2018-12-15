@@ -6,4 +6,40 @@ Teraz zamiast XML uzywamy JSON (jest krotszy)
 
 Zrobimy sql server + back end + (ajax) + front end www
 
+BAZA
 1.sql server (najpierw sql serv configuration manager potem sql serv management studio)
+tworzymy baze danych na serwerze (na naszym kompie Mikolaj)
+tworzymy 2 kolumny, id oraz nvchar (tabele robimy Mikolaj)
+nvchar140 - 140 znakow (n czyli bez ł ą)
+kolumna id + set primary key (w properties za to identyti specification Yes 1,1)
+w tabelce dodajemy komentarze
+
+BACKEND
+odpalamy visual studio  (vs comunity za friko)
+tu piszemy backend w c# (web asp.net web aplication robimy)
+browse do mikołaja sciezke podajemy
+(view solution explorer)
+kontroler restowy robimy (pracuje w tle : pobierz komentarz )
+ctrl+f5 i die uruchomi (w chromie jako xml)
+dodajemy model w solution explorer :)
+(data entity data model)
+..... :) 
+
+FRONTEND
+Backend i frontend zrobimy na osobnych witrynach
+
+Piszemy w visual studio (nie code) bo nie bylo
+
+w jquery robimy te ajax library  dane komentarze z naszego serwera)
+$ajax
+
+  $.ajax({
+            url: "http://localhost:53277/api/komentarze",
+            method: "GET",
+            timeout: 1000,
+            dataType: "json",
+    to wsystko bierzemy z api.jquery.com/ajax (manual taki jest)
+
+
+
+
